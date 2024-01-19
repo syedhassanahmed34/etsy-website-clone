@@ -227,6 +227,37 @@ span:hover {
     padding: 0px 0px 0px 50px;
 }
 
+.parent3 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-image3 {
+    height: 200px;
+    width: 180px;
+}
+
+.box-image3:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all ease 2s;
+}
+
+.box-title3 {
+    display: block;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    padding: 0px 0px 0px 50px;
+
+}
+
+.box-title3:hover {
+    cursor: pointer;
+    text-decoration: underline blue;
+}
+
 footer {
     background-color: #222;
     color: #fff;
