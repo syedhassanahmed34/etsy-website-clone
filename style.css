@@ -99,10 +99,33 @@ p:hover {
     transition: all ease 0.3s;
 }
 
+@media(max-width:900px) {
+    #search-bar {
+        width: 250px;
+    }
+}
+
 h3 {
     text-align: center;
     font-weight: 400;
     font-size: 26px;
+}
+
+@media(max-width:900px) {
+    .text {
+        text-align: center;
+        margin-left: 120px;
+    }
+
+    .images {
+        flex-wrap: wrap;
+        overflow: scroll;
+        align-items: center;
+    }
+
+    .footer {
+        display: block;
+    }
 }
 
 .popular {
@@ -185,46 +208,37 @@ span:hover {
     padding: 10px;
 }
 
-.parent-2 {
-    padding: 20px;
+.parent2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
-.box-2 {
-    width: 300px;
-    height: 370px;
-    /* border: 1px solid black; */
-    margin: 5px;
-    position: relative;
+.box2 {
+    height: 220px;
+    width: 180px;
+    border-radius: 12px;
+    /* border: 1px solid grey; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.box-2 .box-image2 {
-    height: 300px;
-    width: 200px;
-    border-radius: 13%;
-    padding-bottom: 3px;
+.box2>img {
+    height: 200px;
+    width: 170px;
+    border-radius: 12px;
+    padding: 5px;
 }
 
-.box-image2:hover {
+.box2>span {
+    font-weight: bold;
+}
+
+.box2:hover {
     cursor: pointer;
-    transform: scale(0.8);
-    transition: all ease 0.3s;
-}
-
-.box-title2:hover {
-    cursor: pointer;
-    text-decoration: underline blue;
-
-}
-
-
-.box-title2 {
-    display: block;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 20px;
-    padding: 0px 0px 0px 50px;
+    box-shadow: 0px 1px 2px grey;
 }
 
 .parent3 {
@@ -243,6 +257,7 @@ span:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: all ease 2s;
+    box-shadow: 0px 1px 2px darkcyan;
 }
 
 .box-title3 {
@@ -256,6 +271,38 @@ span:hover {
 .box-title3:hover {
     cursor: pointer;
     text-decoration: underline blue;
+}
+
+@media(max-width:900px) {
+    .parent2 {
+        flex-direction: column;
+        margin-right: 10px;
+    }
+
+
+    .box2 {
+        width: 100%;
+        flex-direction: row;
+        height: 80px;
+        border-color: grey;
+        align-items: center;
+
+
+
+    }
+
+    .box2>img {
+        height: 70px;
+        border-radius: 0px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+
+    .box2>span {
+        margin-top: 0px;
+        margin-left: 20px;
+        font-weight: bold;
+    }
 }
 
 footer {
