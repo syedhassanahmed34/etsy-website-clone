@@ -9,7 +9,7 @@ i {
 
 }
 
-img {
+img { 
     height: 35px;
     width: 70px;
     padding: 18px;
@@ -101,7 +101,7 @@ p:hover {
 
 @media(max-width:900px) {
     #search-bar {
-        width: 250px;
+        width: 200px;
     }
 }
 
@@ -109,6 +109,7 @@ h3 {
     text-align: center;
     font-weight: 400;
     font-size: 26px;
+    align-items: center;
 }
 
 @media(max-width:900px) {
@@ -350,4 +351,10 @@ footer {
 
 .footer-bottom p {
     margin: 0;
+}
+
+@media(max-width:900px){
+    .footer{
+        width: 100%;
+    }
 }
